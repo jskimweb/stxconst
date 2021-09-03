@@ -6,8 +6,7 @@ $(document).ready(function() {
         $('.header').removeClass('header--open');
     });
 
-    $('.go-busi').click(function(event) {
-        event.preventDefault();
+    $('.go-busi').click(function() {
         var tgY = $('.busi').offset().top;
         $('html, body').animate({
             scrollTop: tgY

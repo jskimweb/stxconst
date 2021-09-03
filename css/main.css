@@ -306,6 +306,7 @@ body {
   font-size: 0;
   background: url("../images/bg_common.png") no-repeat;
   background-position: -122px 0;
+  cursor: pointer;
 }
 
 /* Business */
