@@ -6,9 +6,9 @@ $(document).ready(function() {
         $('.header').removeClass('header--open');
     });
 
-    $('.go-cate').click(function(event) {
+    $('.go-busi').click(function(event) {
         event.preventDefault();
-        var tgY = $('.cate').offset().top;
+        var tgY = $('.busi').offset().top;
         $('html, body').animate({
             scrollTop: tgY
         });

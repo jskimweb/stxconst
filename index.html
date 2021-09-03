@@ -164,49 +164,51 @@
 
         <!-- Board -->
         <section class="board">
+            <div class="notice-bg"></div>
+            <div class="news-bg"></div>
             <div class="container">
-                <div class="board-box">
-                    <h3>공지사항</h3>
+                <div class="notice">
+                    <h3 class="board__tit">공지사항</h3>
                     <ul class="board-list">
                         <li>
                             <a href="#">
-                                <span class="board-txt">2021년도 협력업체 모집공고</span>
-                                <span class="board-more">더보기</span>
+                                <span class="board__txt">2021년도 협력업체 모집공고</span>
+                                <span class="board__more">더보기</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="board-txt">STX건설 상호 사용 관련 안내</span>
-                                <span class="board-more">더보기</span>
+                                <span class="board__txt">STX건설 상호 사용 관련 안내</span>
+                                <span class="board__more">더보기</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="board-txt">인천영종A49BL 아파트 건설공사 4공구 실내공기질 측정결과바로가기</span>
-                                <span class="board-more">더보기</span>
+                                <span class="board__txt">인천영종A49BL 아파트 건설공사 4공구 실내공기질 측정결과바로가기</span>
+                                <span class="board__more">더보기</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="board-txt">헬리체홀딩스 블록체인 관련 당사 입장</span>
-                                <span class="board-more">더보기</span>
+                                <span class="board__txt">헬리체홀딩스 블록체인 관련 당사 입장</span>
+                                <span class="board__more">더보기</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="board-box pl-100">
-                    <h3>보도자료</h3>
+                <div class="news">
+                    <h3 class="board__tit">보도자료</h3>
                     <ul class="board-list">
                         <li>
                             <a href="#">
-                                <span class="board-txt">STX건설, 춘천 레고랜드 테마파크 시공사 ‘선정’</span>
-                                <span class="board-more">더보기</span>
+                                <span class="board__txt">STX건설, 춘천 레고랜드 테마파크 시공사 ‘선정’</span>
+                                <span class="board__more">더보기</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="board-txt">STX건설, 2018년 성장 '청신호'</span>
-                                <span class="board-more">더보기</span>
+                                <span class="board__txt">STX건설, 2018년 성장 '청신호'</span>
+                                <span class="board__more">더보기</span>
                             </a>
                         </li>
                     </ul>
@@ -220,16 +222,16 @@
         <!-- CS -->
         <section class="cs">
             <div class="container">
-                <div class="cs-box cs-bg1">
-                    <h3 class="cs-tit">FAQ</h3>
-                    <p class="cs-desc">
+                <div class="cs-box cs-box--1">
+                    <h3 class="cs__tit">FAQ</h3>
+                    <p class="cs__desc">
                         STX건설 고객님들을 위해<br>
                         자주하시는 질문과 답변을 정리하였습니다.
                     </p>
                 </div>
-                <div class="cs-box cs-bg2">
-                    <h3 class="cs-tit">고객문의</h3>
-                    <p class="cs-desc">
+                <div class="cs-box cs-box--2">
+                    <h3 class="cs__tit">고객문의</h3>
+                    <p class="cs__desc">
                         STX건설 고객상담은 고객만족<br>
                         서비스를 위하여 최선을 다하고 있습니다.
                     </p>
@@ -243,15 +245,15 @@
         <!-- ABOUT US -->
         <section class="about">
             <div class="container">
-                <div class="about-top clearfix">
+                <div class="about-top">
                     <div class="about-cont">
-                        <h2 class="about-tit">ABOUT US</h2>
+                        <h2 class="about__tit">ABOUT US</h2>
                         <div class="about-box">
-                            <h3 class="about-desc">
+                            <h3 class="about__msg">
                                 고객의 믿음과 신뢰로 성장하는<br>
                                 STX건설이 되겠습니다.
                             </h3>
-                            <p class="about-txt">
+                            <p class="about__desc">
                                 STX건설 이름으로 세계 어디에서, 세계 누구와 겨뤄도<br>
                                 자신 있는 세계 최고를 향해 웅비합니다. STX건설이라는 날개를<br>
                                 하나 더 피고 세계로, 미래로 나아가는 STX건설의 힘찬 비상을 주목해<br>
@@ -259,13 +261,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="about-img">
-                    </div>
+                    <div class="about-img"></div>
                 </div>
-                <div class="about-bottom">
-                    <a href="#">경영이념</a>
-                    <a href="#">공유가치</a>
-                    <a href="#">중장기전략</a>
+                <div class="about-bot">
+                    <div class="about-menu-area">
+                        <a href="#" class="about__menu about__menu--1">경영이념</a>
+                        <a href="#" class="about__menu about__menu--2">공유가치</a>
+                        <a href="#" class="about__menu about__menu--3">중장기전략</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -275,21 +278,13 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="container clearfix">
-                <div class="f-left">
-                    <img src="images/logo_footer.png" alt="STX건설 로고">
-                </div>
-                <div class="f-right">
-                    <span class="f-txt">
-                        부산사무소 : (48059) 부산 해운대구 센텀동로 49(우동) 아이피파빌리온 8층 · TEL : 051-791-3000 · FAX : 051-791-3099
-                    </span>
-                    <span class="f-txt">
-                        창원사무소 : (51494) 경상남도 창원시 성산구 중앙대로 84번길 3, 9층904호 · TEL : 055-263-2060 · FAX : 055-263-2087
-                    </span>
-                    <span class="f-txt">
-                        Copyright ⓒ 2018 STX CONSTRUCTION. LTD. All Rights Reserved.
-                    </span>
-                </div>
+            <div class="container">
+                <span class="footer__logo"></span>
+                <p class="footer__txt">
+                    부산사무소 : (48059) 부산 해운대구 센텀동로 49(우동) 아이피파빌리온 8층 · TEL : 051-791-3000 · FAX : 051-791-3099<br>
+                    창원사무소 : (51494) 경상남도 창원시 성산구 중앙대로 84번길 3, 9층904호 · TEL : 055-263-2060 · FAX : 055-263-2087<br>
+                    Copyright ⓒ 2018 STX CONSTRUCTION. LTD. All Rights Reserved.
+                </p>
             </div>
         </footer>
         <!--// Footer -->
