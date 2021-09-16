@@ -1,19 +1,25 @@
-$(document).ready(function() {
-    $('.gnb').mouseenter(function() {
-        $('.header').addClass('header--open');
-    });
-    $('.gnb').mouseleave(function() {
-        $('.header').removeClass('header--open');
+window.onload = function () {
+    // modal
+    $('.modal').click(function () {
+        $(this).fadeOut();
     });
 
-    $('.go-busi').click(function() {
-        var tgY = $('.busi').offset().top;
+    // gnb hover
+    const mainMenu = $('.dep01>li');
+    const header = $('.header');
+    const openHeader = 'header--open';
+
+    mainMenu.hover(function () {
+        header.addClass(openHeader);
+    }, function () {
+        header.removeClass(openHeader);
+    });
+
+    // move to business
+    $('.go-busi').click(function () {
+        let busiTop = $('.busi').offset().top;
         $('html, body').animate({
-            scrollTop: tgY
+            scrollTop: busiTop
         });
     });
-
-    $('.modal').click(function() {
-        $('.modal').fadeOut();
-    });
-});
+}
