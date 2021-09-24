@@ -1,6 +1,8 @@
 window.onload = function () {
     // modal
-    $('.modal').click(function () {
+    const modal = $('.modal');
+
+    modal.click(function () {
         $(this).fadeOut();
     });
 
@@ -16,8 +18,11 @@ window.onload = function () {
     });
 
     // move to business
-    $('.go-busi').click(function () {
-        let busiTop = $('.busi').offset().top;
+    const goBusi = $('.go-busi');
+    const busi = $('.busi');
+
+    goBusi.click(function () {
+        let busiTop = busi.offset().top;
         $('html, body').animate({
             scrollTop: busiTop
         });
